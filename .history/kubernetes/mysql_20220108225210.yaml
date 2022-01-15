@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-app-mysql
+  labels:
+    app: demo-app-mysql
+spec:
+  selector:
+    matchLabels:
+      app: demo-app
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        editor: vscode
+    spec:
+      containers:
+      - name: name
+        image: Enter containers image

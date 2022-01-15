@@ -1,0 +1,8 @@
+secretGenerator:
+- name: mysql-pass
+  literals:
+  - password=myRootPassword
+  - user-password=myUserPassword
+resources:
+  - mysql-configmap.yaml
+  - demo-app-mysql.yaml
